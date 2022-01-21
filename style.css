@@ -106,11 +106,19 @@ display: flex;
     background-image: url(imagenes/_DSC5630.png);
 }
 
+.photo1:hover{
+    background-image: url(imagenes/_DSC6678.png);
+}
+
 .photo2{
     grid-column: 2/3;
     grid-row: 1/2;
     grid-area: photo2;
     background-image: url(imagenes/Foto\ 2021-12-18\ 03.18.22\ p.\ m..png);
+}
+
+.photo2:hover{
+    background-image: url(imagenes/_DSC4965.png);
 }
 
 .photo3{
@@ -120,11 +128,19 @@ display: flex;
     background-image: url(imagenes/_DSC6080.png);
 }
 
+.photo3:hover{
+    background-image: url(imagenes/_DSC5200.png);
+}
+
 .photo4{
     grid-column: 2/3;
     grid-row: 2/3;
     grid-area: photo4;
     background-image: url(imagenes/_DSC5746.png);
+}
+
+.photo4:hover{
+    background-image: url(imagenes/_DSC6176.png);
 }
 
 .photo5{
@@ -134,6 +150,10 @@ display: flex;
     background-image: url(imagenes/IMG_0879.png);
 }
 
+.photo5:hover{
+    background-image: url(imagenes/_DSC5041\ \(1\).png);
+}
+
 .photo6{
     grid-column: 4/5;
     grid-row: 2/3;
@@ -141,15 +161,12 @@ display: flex;
     background-image: url(imagenes/_DSC6691.png);
 }
 
+.photo6:hover{
+    background-image: url(imagenes/IMG_0866.png)
+}
 
 .photo-uno, .photo-dos, .photo-tres, .photo-cuatro, .photo-cinco, .photo-seis{
 width: 100%;
-}
-
-
-.photo:hover{
-transform: scale(1.2);
-border-radius: 20%;
 }
 
 
@@ -163,7 +180,6 @@ border-radius: 20%;
     top: 30px;
     left: 20px;
     padding-bottom: 150px;
-
 
 }
 .titulo-preguntas{
@@ -206,6 +222,7 @@ border-radius: 20%;
 .formulario-contacto{
     color: white;
     font-family: 'Montserrat', sans-serif;
+    background-color: darkgray;
     width: 30%;
     padding: 20px 0px;
     border: 2px solid white;
@@ -213,6 +230,12 @@ border-radius: 20%;
     display: flex;
     justify-content:center;
     align-items:center;
+    transition: all 2s ease-in;
+
+}
+
+.formulario-contacto:hover{
+    transform: translateX(300px);
 
 }
 .formulario-lista{
@@ -254,6 +277,7 @@ border-radius: 20%;
     background-color: gray;
     width: 100%;
     padding-left: 100px;
+    padding-bottom: 20px;
 }
 .bloque-origen, .bloque-valores{
     font-family: 'Montserrat', sans-serif; 
@@ -282,4 +306,10 @@ border-radius: 20%;
     margin: 20px;
     padding: 10px;
     background-color: rgb(255, 255, 255);
+    transition: all 2s ease;
+}
+
+.foto-about:hover{
+transform: scale(1.2);
+border-radius: 20%;
 }
