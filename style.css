@@ -1,0 +1,285 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Montserrat:wght@400;600&display=swap');
+*{
+    padding: 0;
+    margin: 0
+}
+
+
+
+/* HEADER */
+
+.menu-container{
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo{
+    width: 60%;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+}
+
+
+.menu-item a{
+    font-family: 'Libre Franklin', sans-serif;
+    color: black;
+    text-decoration: none;
+    margin-right: 2em;
+}
+
+.menu-item:hover{
+    transform: scale(1.1);
+
+}
+
+.menu-item a:hover{
+    color: goldenrod;
+}
+
+/* FIN HEADER */
+
+/* FOOTER */
+footer{
+    border-top: 2px solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram, .mail, .ubicacion{
+margin: 10px;
+display: flex;
+align-items: center;
+}
+
+.logo-instagram, .logo-mail, .logo-ubicacion{
+    width: 30px;
+    margin-right: 10px;
+    display: flex;
+}
+
+.info-instagram, .info-mail, .info-ubicacion{
+font-family: 'Libre Franklin', sans-serif;
+display: flex;
+}
+
+/* FIN FOOTER */
+
+/* CONTENIDO INDEX */
+
+.img-banner{
+    width: 100%;
+    display: flex;
+}
+
+
+.photo-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+'photo1 photo2 photo3 photo3'
+'photo1 photo4 photo5 photo6'
+
+}
+
+.photo{
+    background-size: cover;
+    background-position: center;
+    transition: all 1s;
+}
+.photo1{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    grid-area: photo1;
+    background-image: url(imagenes/_DSC5630.png);
+}
+
+.photo2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    grid-area: photo2;
+    background-image: url(imagenes/Foto\ 2021-12-18\ 03.18.22\ p.\ m..png);
+}
+
+.photo3{
+    grid-column: 3/5;
+    grid-row: 1/2;
+    grid-area: photo3;
+    background-image: url(imagenes/_DSC6080.png);
+}
+
+.photo4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    grid-area: photo4;
+    background-image: url(imagenes/_DSC5746.png);
+}
+
+.photo5{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    grid-area: photo5;
+    background-image: url(imagenes/IMG_0879.png);
+}
+
+.photo6{
+    grid-column: 4/5;
+    grid-row: 2/3;
+    grid-area: photo6;
+    background-image: url(imagenes/_DSC6691.png);
+}
+
+
+.photo-uno, .photo-dos, .photo-tres, .photo-cuatro, .photo-cinco, .photo-seis{
+width: 100%;
+}
+
+
+.photo:hover{
+transform: scale(1.2);
+border-radius: 20%;
+}
+
+
+/* FIN CONTENIDO INDEX */
+
+/* CONTENIDO PREGUNTAS FRECUENTES */
+
+.preguntas-frecuentes{
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 30px;
+    left: 20px;
+    padding-bottom: 150px;
+
+
+}
+.titulo-preguntas{
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.texto-pregunta{
+    width: 90%;
+    
+}
+
+.item-preguntas{
+    font-family: 'Montserrat', sans-serif; 
+    font-size: large;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+.formas-de-pago{
+    margin-left: 20px;
+}
+
+/* FIN CONTENIDO PREGUNTAS FRECUENTES */
+
+/* CONTENIDO CONTACTO */
+
+.main-contacto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: gray;
+    
+}
+
+.formulario-contacto{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    width: 30%;
+    padding: 20px 0px;
+    border: 2px solid white;
+    margin-left: 20px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.formulario-lista{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.item-formulario{
+    margin: 10px;
+}
+
+.datos-contacto{
+    font-family: 'Montserrat', sans-serif; 
+    background-color: gray;
+    color:white;
+    width: 28%;
+    padding: 25px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mapa{
+    margin: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+/* FIN CONTENIDO CONTACTO */
+
+/* CONTENIDO ABOUT US */
+
+.contenido-aboutus{
+    background-color: gray;
+    width: 100%;
+    padding-left: 100px;
+}
+.bloque-origen, .bloque-valores{
+    font-family: 'Montserrat', sans-serif; 
+    width: 90%;
+    padding-left: 15px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.titulo-origen, .titulo-valores{
+    font-size: x-large;
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.texto-origen, .texto-valores{
+    font-size: large;
+    width: 40%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    color: rgb(255, 255, 255);;
+    padding: 10px
+}
+.foto-about{
+    width: 18.5%;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
