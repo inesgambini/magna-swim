@@ -164,9 +164,6 @@ display: flex;
 .photo6:hover{
     background-image: url(imagenes/IMG_0866.png)
 }
-
-.photo-uno, .photo-dos, .photo-tres, .photo-cuatro, .photo-cinco, .photo-seis{
-width: 100%;
 }
 
 
