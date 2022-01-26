@@ -78,85 +78,76 @@ display: flex;
 }
 
 
-.photo-grid{
+.grilla-container{
     width: 100%;
-    display: grid;
+    display:grid;
     grid-template-columns: 1.5fr 1fr 1fr 1fr;
     grid-template-rows: 300px 300px;
-    grid-template-areas: 
-'photo1 photo2 photo3 photo3'
-'photo1 photo4 photo5 photo6'
-
+    
 }
 
-.photo{
+.foto-grilla{
     background-size: cover;
     background-position: center;
     transition: all 1s;
 }
-.photo1{
+.celda1{
     grid-column: 1/2;
     grid-row: 1/3;
-    grid-area: photo1;
     background-image: url(imagenes/_DSC5630.png);
 }
 
-.photo1:hover{
+.celda1:hover{
     background-image: url(imagenes/_DSC6678.png);
 }
 
-.photo2{
+.celda2{
     grid-column: 2/3;
     grid-row: 1/2;
-    grid-area: photo2;
     background-image: url(imagenes/Foto\ 2021-12-18\ 03.18.22\ p.\ m..png);
 }
 
-.photo2:hover{
+.celda2:hover{
     background-image: url(imagenes/_DSC4965.png);
 }
 
-.photo3{
+.celda3{
     grid-column: 3/5;
     grid-row: 1/2;
-    grid-area: photo3;
     background-image: url(imagenes/_DSC6080.png);
 }
 
-.photo3:hover{
+.celda3:hover{
     background-image: url(imagenes/_DSC5200.png);
 }
 
-.photo4{
+.celda4{
     grid-column: 2/3;
     grid-row: 2/3;
-    grid-area: photo4;
     background-image: url(imagenes/_DSC5746.png);
 }
 
-.photo4:hover{
+.celda4:hover{
     background-image: url(imagenes/_DSC6176.png);
 }
 
-.photo5{
+.celda5{
     grid-column: 3/4;
     grid-row: 2/3;
-    grid-area: photo5;
     background-image: url(imagenes/IMG_0879.png);
 }
 
-.photo5:hover{
+.celda5:hover{
     background-image: url(imagenes/_DSC5041\ \(1\).png);
 }
 
-.photo6{
+.celda6{
     grid-column: 4/5;
     grid-row: 2/3;
-    grid-area: photo6;
     background-image: url(imagenes/_DSC6691.png);
 }
 
-.photo6:hover{
+.celda6:hover{
     background-image: url(imagenes/IMG_0866.png)
 }
 
