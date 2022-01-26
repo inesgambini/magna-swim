@@ -175,7 +175,17 @@ display: flex;
 
 /* CONTENIDO PREGUNTAS FRECUENTES */
 
-.preguntas-frecuentes{
+.accordion-button{
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+.collapsed{
+    border: 2px solid whitesmoke;
+}
+
+/* .preguntas-frecuentes{
     font-family: 'Montserrat', sans-serif;
     position: relative;
     top: 30px;
@@ -205,7 +215,7 @@ display: flex;
 }
 .formas-de-pago{
     margin-left: 20px;
-}
+} */
 
 /* FIN CONTENIDO PREGUNTAS FRECUENTES */
 
@@ -274,6 +284,7 @@ display: flex;
 .contenido-aboutus{
     background-color: gray;
     width: 100%;
+    padding-top: 20px;
     padding-left: 100px;
     padding-bottom: 20px;
 }
