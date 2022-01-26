@@ -23,25 +23,20 @@
     width: 60%;
 }
 
-.menu{
-    list-style: none;
-    display: flex;
-}
+/* MENU NAV */
 
-
-.menu-item a{
+.menu-nav{
     font-family: 'Libre Franklin', sans-serif;
     color: black;
     text-decoration: none;
-    margin-right: 2em;
-}
+    margin-right: 2em;}
 
-.menu-item:hover{
+.nav-item:hover{
     transform: scale(1.1);
 
 }
 
-.menu-item a:hover{
+.menu-nav:hover{
     color: goldenrod;
 }
 
@@ -165,8 +160,26 @@ display: flex;
     background-image: url(imagenes/IMG_0866.png)
 }
 
+.tarjetas-container{
+    display: flex;
 
+}
+.card-title{
+    font-size: 1em;
+    text-align: center;
+}
 
+.btn{
+    background-color: black;
+    color: white;
+    border: black;
+    display: flex;
+    justify-content: center;
+}
+.btn:hover{
+    color: white;
+    background-color:goldenrod;
+}
 /* FIN CONTENIDO INDEX */
 
 /* CONTENIDO PREGUNTAS FRECUENTES */
@@ -227,14 +240,11 @@ display: flex;
     display: flex;
     justify-content:center;
     align-items:center;
-    transition: all 2s ease-in;
+  
 
 }
 
-.formulario-contacto:hover{
-    transform: translateX(300px);
 
-}
 .formulario-lista{
     list-style: none;
     display: flex;
