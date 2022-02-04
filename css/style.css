@@ -1,0 +1,299 @@
+/* FUENTES */
+@import url("https://fonts.googleapis.com/css2?family=Libre+Franklin&family=Montserrat:wght@400;600&display=swap");
+.menu-container {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-container .logo {
+  width: 60%;
+}
+
+.nav-item:hover {
+  transform: scale 1.1;
+}
+.nav-item .link-nav {
+  font-family: "Libre Franklin", sans-serif;
+  color: black;
+  text-decoration: none;
+  margin-right: 2em;
+}
+.nav-item .link-nav:hover {
+  color: goldenrod;
+}
+
+footer {
+  border-top: 2px solid black;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .instagram {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+footer .instagram .logo-instagram {
+  width: 30px;
+  margin-right: 10px;
+  display: flex;
+}
+footer .mail {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+footer .mail .logo-mail {
+  width: 30px;
+  margin-right: 10px;
+  display: flex;
+}
+footer .ubicacion {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+footer .ubicacion .logo-ubicacion {
+  width: 30px;
+  margin-right: 10px;
+  display: flex;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* INDEX */
+.img-banner {
+  width: 100%;
+  display: flex;
+}
+
+.grilla-container {
+  width: 100%;
+  display: grid;
+  grid-template-areas: celda1 celda2 celda3 celda3 celda1 celda4 celda5 celda6;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px;
+}
+.grilla-container .foto-grilla {
+  background-size: cover;
+  background-position: center;
+  transition: all 1s;
+}
+.grilla-container .celda1 {
+  grid-area: celda1;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  background-image: url(../imagenes/imagen3.png);
+}
+.grilla-container .celda1:hover {
+  background-image: url(../imagenes/imagen13.png);
+}
+.grilla-container .celda2 {
+  grid-area: celda2;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-image: url(../imagenes/imagen16.png);
+}
+.grilla-container .celda2:hover {
+  background-image: url(../imagenes/imagen5.png);
+}
+.grilla-container .celda3 {
+  grid-area: celda3;
+  grid-column: 3/5;
+  grid-row: 1/2;
+  background-image: url(../imagenes/imagen8.png);
+}
+.grilla-container .celda3:hover {
+  background-image: url(../imagenes/imagen6.png);
+}
+.grilla-container .celda4 {
+  grid-area: celda4;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-image: url(../imagenes/imagen4.png);
+}
+.grilla-container .celda4:hover {
+  background-image: url(../imagenes/imagen10.png);
+}
+.grilla-container .celda5 {
+  grid-area: celda5;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  background-image: url(../imagenes/imagen15.png);
+}
+.grilla-container .celda5:hover {
+  background-image: url(../imagenes/imagen2.png);
+}
+.grilla-container .celda6 {
+  grid-area: celda6;
+  grid-column: 4/5;
+  grid-row: 2/3;
+  background-image: url(../imagenes/imagen12.png);
+}
+.grilla-container .celda6:hover {
+  background-image: url(../imagenes/imagen14.png);
+}
+
+.tarjetas-container {
+  display: flex;
+}
+.tarjetas-container .card-title {
+  font-size: 1em;
+  text-align: center;
+}
+.tarjetas-container .btn {
+  background-color: black;
+  color: white;
+  border: black;
+  display: flex;
+  justify-content: center;
+}
+.tarjetas-container .btn:hover {
+  color: white;
+  background-color: goldenrod;
+}
+
+/* FINAL INDEX */
+/* PREGUNTAS FRECUENTES */
+.accordion-button {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.collapsed {
+  border: 2px solid whitesmoke;
+}
+
+/* CONTACTO */
+.main-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: gray;
+}
+.main-contacto .formulario-contacto {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  background-color: darkgray;
+  width: 30%;
+  padding: 20px 0px;
+  border: 2px solid white;
+  margin-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-contacto .formulario-contacto .formulario-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.main-contacto .formulario-contacto .formulario-lista .item-formulario {
+  margin: 10px;
+}
+.main-contacto .datos-contacto {
+  font-family: "Montserrat", sans-serif;
+  background-color: gray;
+  color: white;
+  width: 28%;
+  padding: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-contacto .mapa {
+  margin: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+/* ABOUT US */
+.contenido-aboutus {
+  background-color: gray;
+  width: 100%;
+  padding-top: 20px;
+  padding-left: 100px;
+  padding-bottom: 20px;
+}
+.contenido-aboutus .bloque-origen {
+  font-family: "Montserrat", sans-serif;
+  width: 90%;
+  padding-left: 15px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenido-aboutus .bloque-origen .texto-origen {
+  font-size: large;
+  width: 40%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 10px;
+}
+.contenido-aboutus .bloque-origen .texto-origen .titulo-origen {
+  font-size: x-large;
+  margin-bottom: 10px;
+  display: flex;
+}
+.contenido-aboutus .bloque-origen .foto-about {
+  width: 18.5%;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  transition: all 2s ease;
+}
+.contenido-aboutus .bloque-origen .foto-about:hover {
+  transform: scale(1.2);
+  border-radius: 20%;
+}
+.contenido-aboutus .bloque-valores {
+  font-family: "Montserrat", sans-serif;
+  width: 90%;
+  padding-left: 15px;
+  margin-left: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.contenido-aboutus .bloque-valores .texto-valores {
+  font-size: large;
+  width: 40%;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+  color: white;
+  padding: 10px;
+}
+.contenido-aboutus .bloque-valores .texto-valores .titulo-valores {
+  font-size: x-large;
+  margin-bottom: 10px;
+  display: flex;
+}
+.contenido-aboutus .bloque-valores .foto-about {
+  width: 18.5%;
+  margin: 20px;
+  padding: 10px;
+  background-color: white;
+  transition: all 2s ease;
+}
+.contenido-aboutus .bloque-valores .foto-about:hover {
+  transform: scale(1.2);
+  border-radius: 20%;
+}
+
+/*# sourceMappingURL=style.css.map */

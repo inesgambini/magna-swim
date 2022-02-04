@@ -1,0 +1,46 @@
+footer {
+    border-top: 2px solid black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .instagram {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+
+        .logo-instagram {
+            width: 30px;
+            margin-right: 10px;
+            display: flex;
+
+        }
+    }
+
+    .mail {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+
+        .logo-mail {
+            width: 30px;
+            margin-right: 10px;
+            display: flex;
+        }
+    }
+
+    .ubicacion {
+        margin: 10px;
+        display: flex;
+        align-items: center;
+
+        .logo-ubicacion {
+            width: 30px;
+            margin-right: 10px;
+            display: flex;
+
+        }
+    }
+
+}
