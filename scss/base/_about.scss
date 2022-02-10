@@ -1,0 +1,45 @@
+@media screen and (max-width: 860px){
+.contenido-aboutus{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    padding-left: 0px;
+
+
+    .bloque-origen{
+        display: flex;
+        flex-direction: column;
+       
+
+        .texto-origen{
+            width: 100%;
+        }
+
+        .foto-about{
+            width: 50%;
+            &:hover{
+                transform: scale(1.1);
+                border-radius: 20%;
+            }
+        }
+    }
+
+    .bloque-valores{
+        display: flex;
+        flex-direction: column;
+       
+
+        .texto-valores{
+            width: 100%;
+        }
+
+        .foto-about{
+            width: 50%;
+            &:hover{
+                transform: scale(1.1);
+                border-radius: 20%;
+            }
+        }
+    }
+}
+}

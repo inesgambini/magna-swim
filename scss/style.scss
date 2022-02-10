@@ -4,7 +4,10 @@
 @import 'base/header';
 @import 'base/footer';
 @import 'components/variables';
-@import 'components/mediaqueries';
+@import 'base/index';
+@import 'base/preguntas';
+@import 'base/contacto';
+@import 'base/about';
 
 * {
     padding: 0;
