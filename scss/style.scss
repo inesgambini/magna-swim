@@ -8,6 +8,7 @@
 @import 'base/preguntas';
 @import 'base/contacto';
 @import 'base/about';
+@import 'components/mapas';
 
 * {
     padding: 0;
@@ -224,11 +225,11 @@
         align-items: center;
 
         .texto-origen {
-            font-size: large;
+            font-size: map-get($about, font-size-about);
             width: 40%;
             border-top: 2px solid white;
             border-bottom: 2px solid white;
-            color: rgb(255, 255, 255);
+            color: map-get($about , text-color-about);
             padding: 10px;
 
             .titulo-origen {
