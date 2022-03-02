@@ -1,45 +1,142 @@
-@media screen and (max-width: 860px){
-.contenido-aboutus{
-    display: flex;
-    flex-direction: column;
-    margin-left: 0px;
-    padding-left: 0px;
-
-
-    .bloque-origen{
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+    .contenido-aboutus {
         display: flex;
         flex-direction: column;
-       
+        align-items: center;
 
-        .texto-origen{
-            width: 100%;
-        }
+        .bloque-origen {
+            display: flex;
+            flex-direction: column;
 
-        .foto-about{
-            width: 50%;
-            &:hover{
-                transform: scale(1.1);
-                border-radius: 20%;
+
+            .texto-origen {
+                width: 100%;
             }
-        }
-    }
 
-    .bloque-valores{
-        display: flex;
-        flex-direction: column;
-       
-
-        .texto-valores{
-            width: 100%;
+           
         }
 
-        .foto-about{
-            width: 50%;
-            &:hover{
-                transform: scale(1.1);
-                border-radius: 20%;
+        .bloque-valores {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+
+            .texto-valores {
+                width: 100%;
             }
+
+            
         }
     }
 }
+
+@import '../components/mapas';
+
+/* ABOUT US */
+
+.contenido-aboutus {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+
+    .bloque-origen {
+        font-family: 'Montserrat', sans-serif;
+        background-color: map-get($about, bg-color-about);
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .texto-origen {
+            font-size: map-get($about, font-size-about);
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            color: map-get($about, text-color-about);
+            padding: 10px;
+
+            .titulo-origen {
+                color: white;
+                font-size: x-large;
+                margin-bottom: $margin;
+                display: flex;
+
+            }
+        }
+
+        .foto-about {
+            @media screen and (min-width: 800px) {
+            width: 20%;
+            margin: 20px;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            transition: all 2s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                border-radius: 20%;
+            }
+            }
+            @media screen and (max-width: 800px) {
+                width: 50%;
+                margin: 20px;
+                padding: 10px;
+                background-color: rgb(255, 255, 255);
+            }
+
+
+
+        }
+
+    }
+
+    .bloque-valores {
+        font-family: 'Montserrat', sans-serif;
+        background-color: map-get($about, bg-color-about);
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .texto-valores {
+            font-size: large;
+            border-top: 2px solid white;
+            border-bottom: 2px solid white;
+            color: map-get($about, text-color-about);
+            padding: 10px;
+
+            .titulo-valores {
+                color: white;
+                font-size: x-large;
+                margin-bottom: 10px;
+                display: flex;
+
+            }
+        }
+
+        .foto-about {
+            @media screen and (min-width: 800px) {
+            width: 20%;
+            margin: 20px;
+            padding: 10px;
+            background-color: rgb(255, 255, 255);
+            transition: all 2s ease;
+
+            &:hover {
+                transform: scale(1.1);
+                border-radius: 20%;
+            }
+            }
+            @media screen and (max-width: 800px) {
+                width: 50%;
+                margin: 20px;
+                padding: 10px;
+                background-color: rgb(255, 255, 255);
+            }
+
+        }
+
+    }
 }

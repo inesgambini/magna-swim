@@ -1,13 +1,73 @@
-@media screen and (max-width: 860px){
-.main-contacto{
-    display: flex;
-    flex-direction: column;
+@media screen and (max-width: 860px) {
+    .main-contacto {
+        display: flex;
+        flex-direction: column;
 
-    .formulario-contacto{
+        .formulario-contacto {
+            width: 70%;
+            margin-top: 10px;
+
+        }
+        .datos-contacto{
+            margin-bottom: 10px;
+        }
+
+    }
+}
+
+/* CONTACTO */
+
+.main-contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+
+    .formulario-contacto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: gainsboro;
+        padding: 20px;
+        margin: 10px;
+
+        .form-label {
+            color: black;
+            font-family: 'Montserrat', sans-serif;
+        }
+    }
+
+    .datos-contacto {
+        font-family: 'Montserrat', sans-serif;
+        background-color: gainsboro;
+        color: black;
         width: 70%;
-        margin-top: 10px;
+        padding: 2em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .item-contacto {
+            font-size: x-large;
+
+        }
+
+        .info-contacto {
+            margin-bottom: 2em;
+            
+        }
+
+
+
 
     }
 
-}
+    .mapa {
+        margin: 20px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+
+    }
+
 }

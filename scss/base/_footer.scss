@@ -5,16 +5,26 @@ footer {
     flex-direction: column;
     align-items: center;
 
+    .registro-mail{
+        display: flex;
+        
+    }
+
     .instagram {
         margin: 10px;
         display: flex;
         align-items: center;
 
         .logo-instagram {
-            width: 30px;
+            width: 20px;
             margin-right: 10px;
             display: flex;
 
+        }
+
+        .info-instagram{
+            text-decoration: none;
+            color: black;
         }
     }
 
@@ -24,9 +34,12 @@ footer {
         align-items: center;
 
         .logo-mail {
-            width: 30px;
+            width: 20px;
             margin-right: 10px;
             display: flex;
+        }
+        .info-mail{
+            color: black;
         }
     }
 
@@ -36,11 +49,17 @@ footer {
         align-items: center;
 
         .logo-ubicacion {
-            width: 30px;
+            width: 20px;
             margin-right: 10px;
             display: flex;
 
         }
+        .info-ubicacion{
+            color: black;
+        }
+    }
+    .derechos-footer{
+        font-size: x-small;
     }
 
 }
